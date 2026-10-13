@@ -168,7 +168,7 @@
     {
       "slug": "constellations",
       "title": "Constellations",
-      "ages": "8-10",
+      "ages": "8+",
       "order": 3,
       "theme": "stars",
       "tagline": "Real star patterns, star stories and puzzles for young sky-watchers.",
@@ -176,7 +176,7 @@
       "pageCount": 20,
       "coloring": {
         "title": "Constellations: Coloring and Activity Book",
-        "subtitle": "Star Stories, Coloring Pages and Puzzles for Ages 8–10",
+        "subtitle": "Star Stories, Coloring Pages and Puzzles for Ages 8+",
         "bullets": [
           "20 big constellation pictures to color, each with a real star fact",
           "Crosswords, word searches, a star scramble, matching games, a secret star message and a maze",
@@ -217,7 +217,7 @@
       },
       "companion": {
         "title": "Constellations: Companion Book",
-        "subtitle": "Star Maps and Sky Facts for Ages 8–10",
+        "subtitle": "Star Maps and Sky Facts for Ages 8+",
         "bullets": [
           "A full-color picture for every coloring page",
           "A big star map facing every picture, showing where and when to look",
