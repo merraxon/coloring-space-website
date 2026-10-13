@@ -1,0 +1,259 @@
+{
+  "site": {
+    "name": "Coloring-Space",
+    "url": "https://coloring-space.com",
+    "tagline": "Color it. Learn it. Look up!"
+  },
+  "books": [
+    {
+      "slug": "introduction-to-space",
+      "title": "Introduction to Space",
+      "ages": "2-4",
+      "order": 1,
+      "theme": "sun",
+      "tagline": "Big, simple space pictures for the littlest explorers.",
+      "intro": "Say hello to space with Zippy the star! Color 20 big, simple pictures: the Sun, the Moon, Earth, the planets, a rocket, an astronaut and a Mars rover. Thick, bold lines and big spaces are just right for little hands. See the real colors of space! Every page matches the coloring book, with a bright full-color picture, one or two short sentences to read aloud, a fun fact and a simple question.",
+      "pageCount": 20,
+      "coloring": {
+        "title": "Introduction to Space: Coloring Book",
+        "subtitle": "Big, Simple Space Pictures to Color for Ages 2–4",
+        "bullets": [
+          "20 big, simple space pictures to color",
+          "Thick lines and big spaces for little hands",
+          "Each picture labeled with its name",
+          "Ages 2–4 (toddlers and preschool)"
+        ],
+        "amazonUrl": "",
+        "samples": [
+          {
+            "src": "/samples/introduction-to-space/coloring-cover.jpg",
+            "caption": "Front cover"
+          },
+          {
+            "src": "/samples/introduction-to-space/coloring-02.jpg",
+            "caption": "The Sun"
+          },
+          {
+            "src": "/samples/introduction-to-space/coloring-05.jpg",
+            "caption": "Earth"
+          },
+          {
+            "src": "/samples/introduction-to-space/coloring-10.jpg",
+            "caption": "Rocket"
+          },
+          {
+            "src": "/samples/introduction-to-space/coloring-15.jpg",
+            "caption": "Mars Rover"
+          }
+        ]
+      },
+      "companion": {
+        "title": "Introduction to Space: Companion Book",
+        "subtitle": "First Space Words and Pictures for Ages 2–4",
+        "bullets": [
+          "20 full-color pages that match the coloring book",
+          "Short read-aloud sentences for ages 2–4",
+          "A fun fact and a question on every page",
+          "First space words to learn"
+        ],
+        "amazonUrl": "",
+        "samples": [
+          {
+            "src": "/samples/introduction-to-space/companion-cover.jpg",
+            "caption": "Front cover"
+          },
+          {
+            "src": "/samples/introduction-to-space/companion-contents.jpg",
+            "caption": "Contents"
+          },
+          {
+            "src": "/samples/introduction-to-space/companion-02.jpg",
+            "caption": "The Sun"
+          },
+          {
+            "src": "/samples/introduction-to-space/companion-10.jpg",
+            "caption": "Rocket"
+          },
+          {
+            "src": "/samples/introduction-to-space/companion-16.jpg",
+            "caption": "Comet"
+          }
+        ]
+      },
+      "overviewVideo": "",
+      "cover": "/samples/introduction-to-space/coloring-cover.jpg"
+    },
+    {
+      "slug": "exploration-of-space",
+      "title": "Exploration of Space",
+      "ages": "5-7",
+      "order": 2,
+      "theme": "rocket",
+      "tagline": "Blast off with Zippy the star through the whole solar system.",
+      "intro": "Blast off with Zippy the star! Color 22 big space pictures, from the blazing Sun and ringed Saturn to rockets, astronauts and a Mars rover. Every page has a short, true fact written for kids in kindergarten to 2nd grade and checked against NASA sources.",
+      "pageCount": 22,
+      "coloring": {
+        "title": "Exploration of Space: Coloring Book",
+        "subtitle": "Fun Space Coloring and Facts for Ages 5–7",
+        "bullets": [
+          "22 big, detailed space pictures to color",
+          "A kid-friendly fact on every page",
+          "One picture per sheet with a blank back",
+          "Ages 5–7 (kindergarten to 2nd grade)"
+        ],
+        "amazonUrl": "",
+        "samples": [
+          {
+            "src": "/samples/exploration-of-space/coloring-cover.jpg",
+            "caption": "Front cover"
+          },
+          {
+            "src": "/samples/exploration-of-space/coloring-01.jpg",
+            "caption": "The Sun"
+          },
+          {
+            "src": "/samples/exploration-of-space/coloring-05.jpg",
+            "caption": "The Moon"
+          },
+          {
+            "src": "/samples/exploration-of-space/coloring-10.jpg",
+            "caption": "Neptune"
+          },
+          {
+            "src": "/samples/exploration-of-space/coloring-18.jpg",
+            "caption": "Rockets"
+          },
+          {
+            "src": "/samples/exploration-of-space/coloring-22.jpg",
+            "caption": "Mars rovers"
+          }
+        ]
+      },
+      "companion": {
+        "title": "Exploration of Space: Companion Book",
+        "subtitle": "Read-Along Space Facts for Ages 5–7",
+        "bullets": [
+          "22 full-color pages that match the coloring book",
+          "Read-along facts for ages 5–7",
+          "Wow! facts and Think questions on every page",
+          "A glossary of space words"
+        ],
+        "amazonUrl": "",
+        "samples": [
+          {
+            "src": "/samples/exploration-of-space/companion-cover.jpg",
+            "caption": "Front cover"
+          },
+          {
+            "src": "/samples/exploration-of-space/companion-contents.jpg",
+            "caption": "Contents"
+          },
+          {
+            "src": "/samples/exploration-of-space/companion-01.jpg",
+            "caption": "The Sun"
+          },
+          {
+            "src": "/samples/exploration-of-space/companion-10.jpg",
+            "caption": "Neptune"
+          },
+          {
+            "src": "/samples/exploration-of-space/companion-19.jpg",
+            "caption": "Astronauts"
+          }
+        ]
+      },
+      "overviewVideo": "",
+      "cover": "/samples/exploration-of-space/coloring-cover.jpg"
+    },
+    {
+      "slug": "constellations",
+      "title": "Constellations",
+      "ages": "8-10",
+      "order": 3,
+      "theme": "stars",
+      "tagline": "Real star patterns, star stories and puzzles for young sky-watchers.",
+      "intro": "Twenty famous constellations, each drawn over its real stars as they look from a real place on a real night. The coloring and activity book adds crosswords, word searches, a secret star message, a maze and four seasonal star maps. The full-color companion book tells the star stories and the science behind them.",
+      "pageCount": 20,
+      "coloring": {
+        "title": "Constellations: Coloring and Activity Book",
+        "subtitle": "Star Stories, Coloring Pages and Puzzles for Ages 8–10",
+        "bullets": [
+          "20 big constellation pictures to color, each with a real star fact",
+          "Crosswords, word searches, a star scramble, matching games, a secret star message and a maze",
+          "Four seasonal star maps for finding the constellations in the real sky",
+          "An invent-your-own-constellation page and a stargazing journal"
+        ],
+        "amazonUrl": "",
+        "samples": [
+          {
+            "src": "/samples/constellations/coloring-cover.jpg",
+            "caption": "Front cover"
+          },
+          {
+            "src": "/samples/constellations/coloring-01.jpg",
+            "caption": "Ursa Major, the Great Bear"
+          },
+          {
+            "src": "/samples/constellations/coloring-05.jpg",
+            "caption": "Orion the Hunter"
+          },
+          {
+            "src": "/samples/constellations/coloring-10.jpg",
+            "caption": "Pegasus the Winged Horse"
+          },
+          {
+            "src": "/samples/constellations/coloring-20.jpg",
+            "caption": "Andromeda the Princess"
+          },
+          {
+            "src": "/samples/constellations/activity-crossword.jpg",
+            "caption": "Star Names Crossword"
+          },
+          {
+            "src": "/samples/constellations/activity-star-map.jpg",
+            "caption": "Winter Star Map"
+          }
+        ]
+      },
+      "companion": {
+        "title": "Constellations: Companion Book",
+        "subtitle": "Star Maps and Sky Facts for Ages 8–10",
+        "bullets": [
+          "A full-color picture for every coloring page",
+          "Easy read-along facts about the stars, the myths and how to find them",
+          "A Wow! fact and a Think question on every page",
+          "Real-sky pages and a glossary of new space words"
+        ],
+        "amazonUrl": "",
+        "samples": [
+          {
+            "src": "/samples/constellations/companion-cover.jpg",
+            "caption": "Front cover"
+          },
+          {
+            "src": "/samples/constellations/companion-contents.jpg",
+            "caption": "Contents"
+          },
+          {
+            "src": "/samples/constellations/companion-01.jpg",
+            "caption": "Ursa Major, the Great Bear"
+          },
+          {
+            "src": "/samples/constellations/companion-05.jpg",
+            "caption": "Orion the Hunter"
+          },
+          {
+            "src": "/samples/constellations/companion-10.jpg",
+            "caption": "Pegasus the Winged Horse"
+          },
+          {
+            "src": "/samples/constellations/companion-19.jpg",
+            "caption": "Crux, the Southern Cross"
+          }
+        ]
+      },
+      "overviewVideo": "",
+      "cover": "/samples/constellations/coloring-cover.jpg"
+    }
+  ]
+}
