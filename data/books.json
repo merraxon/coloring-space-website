@@ -172,7 +172,7 @@
       "order": 3,
       "theme": "stars",
       "tagline": "Real star patterns, star stories and puzzles for young sky-watchers.",
-      "intro": "Twenty famous constellations, each drawn over its real stars as they look from a real place on a real night. The coloring and activity book adds crosswords, word searches, a secret star message, a maze and four seasonal star maps. The full-color companion book tells the star stories and the science behind them.",
+      "intro": "Twenty famous constellations, each drawn over its real stars as they look from a real place on a real night. The coloring and activity book adds crosswords, word searches, a secret star message, a maze and four seasonal star maps. The full-color companion book tells the star stories and the science behind them, with a big star map facing every picture.",
       "pageCount": 20,
       "coloring": {
         "title": "Constellations: Coloring and Activity Book",
@@ -220,6 +220,7 @@
         "subtitle": "Star Maps and Sky Facts for Ages 8–10",
         "bullets": [
           "A full-color picture for every coloring page",
+          "A big star map facing every picture, showing where and when to look",
           "Easy read-along facts about the stars, the myths and how to find them",
           "A Wow! fact and a Think question on every page",
           "Real-sky pages and a glossary of new space words"
@@ -233,6 +234,10 @@
           {
             "src": "/samples/constellations/companion-contents.jpg",
             "caption": "Contents"
+          },
+          {
+            "src": "/samples/constellations/companion-map-01.jpg",
+            "caption": "Ursa Major in the Real Sky"
           },
           {
             "src": "/samples/constellations/companion-01.jpg",
