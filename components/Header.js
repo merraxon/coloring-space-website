@@ -10,7 +10,8 @@ export default function Header() {
           <Zippy />
           {site.name}
         </Link>
-        <nav className="nav" aria-label="Books">
+        <nav className="nav" aria-label="Main">
+          <Link href="/">Home</Link>
           {books.map((b) => (
             <Link key={b.slug} href={`/${b.slug}/`}>
               {b.title}

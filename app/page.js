@@ -48,7 +48,7 @@ export default function Home() {
           </div>
           <div className="card">
             <h3>Look up</h3>
-            <p className="muted small">Scan the QR code in your book to visit its page here, with a video tour coming soon.</p>
+            <p className="muted small">Scan the QR code in your book to visit its page here, and view additional content (coming soon).</p>
           </div>
         </div>
       </section>
