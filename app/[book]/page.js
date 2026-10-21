@@ -69,7 +69,16 @@ export default async function BookPage({ params }) {
       <section className="section">
         <h2>Watch the overview</h2>
         <div className="video">
-          {book.overviewVideo ? (
+          {book.tourVideo ? (
+            <video
+              controls
+              playsInline
+              preload="none"
+              poster={book.tourVideo.poster}
+              src={book.tourVideo.src}
+              aria-label={`${book.title} video tour`}
+            />
+          ) : book.overviewVideo ? (
             <iframe
               src={`https://www.youtube-nocookie.com/embed/${book.overviewVideo}`}
               title={`${book.title} overview video`}

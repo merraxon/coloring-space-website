@@ -81,7 +81,11 @@
         ]
       },
       "overviewVideo": "",
-      "cover": "/samples/introduction-to-space/coloring-cover.jpg"
+      "cover": "/samples/introduction-to-space/coloring-cover.jpg",
+      "tourVideo": {
+        "src": "/videos/introduction-to-space-tour.mp4",
+        "poster": "/videos/introduction-to-space-poster.jpg"
+      }
     },
     {
       "slug": "exploration-of-space",
@@ -163,7 +167,11 @@
         ]
       },
       "overviewVideo": "",
-      "cover": "/samples/exploration-of-space/coloring-cover.jpg"
+      "cover": "/samples/exploration-of-space/coloring-cover.jpg",
+      "tourVideo": {
+        "src": "/videos/exploration-of-space-tour.mp4",
+        "poster": "/videos/exploration-of-space-poster.jpg"
+      }
     },
     {
       "slug": "constellations",
@@ -258,7 +266,11 @@
         ]
       },
       "overviewVideo": "",
-      "cover": "/samples/constellations/coloring-cover.jpg"
+      "cover": "/samples/constellations/coloring-cover.jpg",
+      "tourVideo": {
+        "src": "/videos/constellations-tour.mp4",
+        "poster": "/videos/constellations-poster.jpg"
+      }
     }
   ]
 }
