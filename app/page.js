@@ -2,6 +2,36 @@ import Link from "next/link";
 import Art from "../components/Art";
 import { books, site } from "../lib/books";
 
+// One card per printed book: its cover, a link to the book's page, and its own Amazon button.
+function BookCard({ book, part, label }) {
+  const cover = part.samples[0]?.src || book.cover;
+  return (
+    <div className={`card book-card theme-${book.theme}`}>
+      <Link href={`/${book.slug}/`} className="book-link">
+        <div className="art">
+          <Art book={{ ...book, cover }} />
+        </div>
+        <span className="badge" style={{ alignSelf: "flex-start" }}>
+          Ages {book.ages.replace("-", "–")}
+        </span>
+        <h3>{book.title}</h3>
+        <p className="muted small" style={{ margin: 0 }}>{book.tagline}</p>
+      </Link>
+      <div className="btns buy">
+        {part.amazonUrl ? (
+          <a className="btn small" href={part.amazonUrl} target="_blank" rel="noopener">
+            {label} on Amazon
+          </a>
+        ) : (
+          <span className="btn small" aria-disabled="true">
+            On Amazon: coming soon
+          </span>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -12,49 +42,20 @@ export default function Home() {
           Every Coloring-Space book comes as a pair: a coloring book to make your own, and a full-color companion book
           with the real facts behind every page. Facts are checked against NASA and other trusted sources.
         </p>
-        <div className="btns">
-          <a className="btn" href="#books">Find a book</a>
-        </div>
       </section>
 
       <section className="section" id="books">
         <h2>Our books</h2>
-        <div className="grid three">
-          {books.map((b) => (
-            <div key={b.slug} className={`card book-card theme-${b.theme}`}>
-              <Link href={`/${b.slug}/`} className="book-link">
-                <div className="art">
-                  <Art book={b} />
-                </div>
-                <span className="badge" style={{ alignSelf: "flex-start" }}>
-                  Ages {b.ages.replace("-", "–")}
-                </span>
-                <h3>{b.title}</h3>
-                <p className="muted small" style={{ margin: 0 }}>{b.tagline}</p>
-              </Link>
-              <div className="btns buy">
-                {b.coloring.amazonUrl || b.companion.amazonUrl ? (
-                  <>
-                    {b.coloring.amazonUrl && (
-                      <a className="btn small" href={b.coloring.amazonUrl} target="_blank" rel="noopener">
-                        Coloring book on Amazon
-                      </a>
-                    )}
-                    {b.companion.amazonUrl && (
-                      <a className="btn small" href={b.companion.amazonUrl} target="_blank" rel="noopener">
-                        Companion book on Amazon
-                      </a>
-                    )}
-                  </>
-                ) : (
-                  <span className="btn small" aria-disabled="true">
-                    On Amazon: coming soon
-                  </span>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+        {[
+          ["coloring", "Coloring book"],
+          ["companion", "Companion book"],
+        ].map(([kind, label]) => (
+          <div key={kind} className="grid three book-row">
+            {books.map((b) => (
+              <BookCard key={b.slug} book={b} part={b[kind]} label={label} />
+            ))}
+          </div>
+        ))}
       </section>
 
       <section className="section">
