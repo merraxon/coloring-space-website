@@ -70,6 +70,7 @@ ul.ticks li::before { content: "★"; position: absolute; left: 0; color: var(--
 .book-card { display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: var(--ink); transition: transform .15s; }
 .book-card:hover { transform: translateY(-3px); }
 .book-link { display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: inherit; }
+.book-row + .book-row { margin-top: 40px; }
 .book-card .btns.buy { margin-top: auto; gap: 8px; }
 .btn.small { padding: 9px 16px; font-size: 0.9rem; }
 .art { position: relative; border-radius: 14px; aspect-ratio: 4 / 3; display: grid; place-items: center; overflow: hidden; }
