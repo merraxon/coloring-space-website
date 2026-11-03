@@ -21,16 +21,38 @@ export default function Home() {
         <h2>Our books</h2>
         <div className="grid three">
           {books.map((b) => (
-            <Link key={b.slug} href={`/${b.slug}/`} className={`card book-card theme-${b.theme}`}>
-              <div className="art">
-                <Art book={b} />
+            <div key={b.slug} className={`card book-card theme-${b.theme}`}>
+              <Link href={`/${b.slug}/`} className="book-link">
+                <div className="art">
+                  <Art book={b} />
+                </div>
+                <span className="badge" style={{ alignSelf: "flex-start" }}>
+                  Ages {b.ages.replace("-", "–")}
+                </span>
+                <h3>{b.title}</h3>
+                <p className="muted small" style={{ margin: 0 }}>{b.tagline}</p>
+              </Link>
+              <div className="btns buy">
+                {b.coloring.amazonUrl || b.companion.amazonUrl ? (
+                  <>
+                    {b.coloring.amazonUrl && (
+                      <a className="btn small" href={b.coloring.amazonUrl} target="_blank" rel="noopener">
+                        Coloring book on Amazon
+                      </a>
+                    )}
+                    {b.companion.amazonUrl && (
+                      <a className="btn small" href={b.companion.amazonUrl} target="_blank" rel="noopener">
+                        Companion book on Amazon
+                      </a>
+                    )}
+                  </>
+                ) : (
+                  <span className="btn small" aria-disabled="true">
+                    On Amazon: coming soon
+                  </span>
+                )}
               </div>
-              <span className="badge" style={{ alignSelf: "flex-start" }}>
-                Ages {b.ages.replace("-", "–")}
-              </span>
-              <h3>{b.title}</h3>
-              <p className="muted small" style={{ margin: 0 }}>{b.tagline}</p>
-            </Link>
+            </div>
           ))}
         </div>
       </section>
