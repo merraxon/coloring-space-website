@@ -9,6 +9,7 @@
   --sun: #ff9f43;
   --rocket: #ff6b81;
   --stars: #a29bfe;
+  --moon: #5dade2;
   --radius: 18px;
   --max: 1080px;
 }
@@ -70,6 +71,7 @@ ul.ticks li::before { content: "★"; position: absolute; left: 0; color: var(--
 .book-card { display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: var(--ink); transition: transform .15s; }
 .book-card:hover { transform: translateY(-3px); }
 .book-link { display: flex; flex-direction: column; gap: 14px; text-decoration: none; color: inherit; }
+.grid.book-row { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 .book-row + .book-row { margin-top: 40px; }
 .book-card .btns.buy { margin-top: auto; gap: 8px; }
 .btn.small { padding: 9px 16px; font-size: 0.9rem; }
@@ -78,10 +80,12 @@ ul.ticks li::before { content: "★"; position: absolute; left: 0; color: var(--
 .art img { position: absolute; inset: 5%; width: 90%; height: 90%; object-fit: contain; filter: drop-shadow(0 8px 18px #0008); }
 .theme-sun .art { background: linear-gradient(160deg, #ffb86b33, #ff9f4311), var(--night-3); }
 .theme-rocket .art { background: linear-gradient(160deg, #ff6b8133, #ff6b8111), var(--night-3); }
+.theme-moon .art { background: linear-gradient(160deg, #5dade233, #5dade211), var(--night-3); }
 .theme-stars .art { background: linear-gradient(160deg, #a29bfe33, #a29bfe11), var(--night-3); }
 .theme-sun .badge { color: var(--sun); }
 .theme-rocket .badge { color: var(--rocket); }
 .theme-stars .badge { color: var(--stars); }
+.theme-moon .badge { color: var(--moon); }
 
 /* book sub-navigation */
 .subnav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 24px; }
