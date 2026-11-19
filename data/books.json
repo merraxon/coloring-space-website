@@ -325,7 +325,11 @@
         ]
       },
       "overviewVideo": "",
-      "cover": "/samples/my-stargazing-journal/journal-cover.jpg"
+      "cover": "/samples/my-stargazing-journal/journal-cover.jpg",
+      "tourVideo": {
+        "src": "/videos/my-stargazing-journal-tour.mp4",
+        "poster": "/videos/my-stargazing-journal-poster.jpg"
+      }
     }
   ]
 }
