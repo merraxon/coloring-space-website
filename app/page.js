@@ -7,6 +7,7 @@ function BookCard({ book, part, label }) {
   const cover = part.samples[0]?.src || book.cover;
   return (
     <div className={`card book-card theme-${book.theme}`}>
+      {book.isNew && <span className="new-label">New</span>}
       <Link href={`/${book.slug}/`} className="book-link">
         <div className="art">
           <Art book={{ ...book, cover }} />
@@ -32,31 +33,46 @@ function BookCard({ book, part, label }) {
   );
 }
 
+// Books marked "isNew" in data/books.json are featured beside the headline instead of in the book rows.
+const featured = books.filter((b) => b.isNew);
+const PARTS = [
+  ["coloring", "Coloring book"],
+  ["companion", "Companion book"],
+  ["journal", "Journal"],
+];
+const firstPart = (b) => PARTS.find(([k]) => b[k]);
+
 export default function Home() {
   return (
     <>
-      <section className="hero">
-        <span className="badge">{site.tagline}</span>
-        <h1 style={{ marginTop: 14 }}>Coloring books that teach kids about space</h1>
-        <p className="lead">
-          Our space books come as a pair: a coloring book to make your own, and a full-color companion book with the
-          real facts behind every page. Then take it outside with a stargazing journal for the real night sky. Facts are checked against NASA and other trusted sources.
-        </p>
+      <section className={featured.length ? "hero hero-featured" : "hero"}>
+        <div>
+          <span className="badge">{site.tagline}</span>
+          <h1 style={{ marginTop: 14 }}>Coloring books that teach kids about space</h1>
+          <p className="lead">
+            Our space books come as a pair: a coloring book to make your own, and a full-color companion book with the
+            real facts behind every page. Then take it outside with a stargazing journal for the real night sky. Facts are checked against NASA and other trusted sources.
+          </p>
+        </div>
+        {featured.map((b) => {
+          const [kind, label] = firstPart(b);
+          return <BookCard key={b.slug} book={b} part={b[kind]} label={label} />;
+        })}
       </section>
 
       <section className="section" id="books">
         <h2>Our books</h2>
-        {[
-          ["coloring", "Coloring book"],
-          ["companion", "Companion book"],
-          ["journal", "Journal"],
-        ].map(([kind, label]) => (
-          <div key={kind} className="grid three book-row">
-            {books.filter((b) => b[kind]).map((b) => (
-              <BookCard key={b.slug} book={b} part={b[kind]} label={label} />
-            ))}
-          </div>
-        ))}
+        {PARTS.map(([kind, label]) => {
+          const row = books.filter((b) => b[kind] && !b.isNew);
+          if (!row.length) return null;
+          return (
+            <div key={kind} className="grid three book-row">
+              {row.map((b) => (
+                <BookCard key={b.slug} book={b} part={b[kind]} label={label} />
+              ))}
+            </div>
+          );
+        })}
       </section>
 
       <section className="section">

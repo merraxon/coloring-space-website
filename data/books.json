@@ -277,6 +277,7 @@
       "title": "My Stargazing Journal",
       "ages": "8+",
       "order": 4,
+      "isNew": true,
       "theme": "moon",
       "tagline": "A night sky log for young astronomers: track the Moon, find planets and draw what you see.",
       "intro": "Grab a red flashlight and head outside! My Stargazing Journal turns every clear night into a sky adventure. Log what you see, track the Moon through its shapes, hunt for planets and famous star patterns, and draw your own night sky. Big, bold black print with no red ink makes every page easy to read under a red flashlight.",
