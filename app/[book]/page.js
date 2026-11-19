@@ -14,6 +14,13 @@ export async function generateMetadata({ params }) {
   return { title: `${book.title} (ages ${book.ages})`, description: book.tagline };
 }
 
+// The printed books a title comes as. Most are a coloring + companion pair; a journal is one book.
+const PARTS = [
+  ["coloring", "Coloring book"],
+  ["companion", "Companion book"],
+  ["journal", "Journal"],
+];
+
 function BuyButton({ part }) {
   if (part.amazonUrl) {
     return (
@@ -95,8 +102,9 @@ export default async function BookPage({ params }) {
       </section>
 
       <section className="section grid two">
-        <BookPart part={book.coloring} kind="Coloring book" />
-        <BookPart part={book.companion} kind="Companion book" />
+        {PARTS.filter(([key]) => book[key]).map(([key, kind]) => (
+          <BookPart key={key} part={book[key]} kind={kind} />
+        ))}
       </section>
     </div>
   );

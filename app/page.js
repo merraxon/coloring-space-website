@@ -39,8 +39,8 @@ export default function Home() {
         <span className="badge">{site.tagline}</span>
         <h1 style={{ marginTop: 14 }}>Coloring books that teach kids about space</h1>
         <p className="lead">
-          Every Coloring-Space book comes as a pair: a coloring book to make your own, and a full-color companion book
-          with the real facts behind every page. Facts are checked against NASA and other trusted sources.
+          Our space books come as a pair: a coloring book to make your own, and a full-color companion book with the
+          real facts behind every page. Then take it outside with a stargazing journal for the real night sky. Facts are checked against NASA and other trusted sources.
         </p>
       </section>
 
@@ -49,9 +49,10 @@ export default function Home() {
         {[
           ["coloring", "Coloring book"],
           ["companion", "Companion book"],
+          ["journal", "Journal"],
         ].map(([kind, label]) => (
           <div key={kind} className="grid three book-row">
-            {books.map((b) => (
+            {books.filter((b) => b[kind]).map((b) => (
               <BookCard key={b.slug} book={b} part={b[kind]} label={label} />
             ))}
           </div>

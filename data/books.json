@@ -271,6 +271,61 @@
         "src": "/videos/constellations-tour.mp4",
         "poster": "/videos/constellations-poster.jpg"
       }
+    },
+    {
+      "slug": "my-stargazing-journal",
+      "title": "My Stargazing Journal",
+      "ages": "8+",
+      "order": 4,
+      "theme": "moon",
+      "tagline": "A night sky log for young astronomers: track the Moon, find planets and draw what you see.",
+      "intro": "Grab a red flashlight and head outside! My Stargazing Journal turns every clear night into a sky adventure. Log what you see, track the Moon through its shapes, hunt for planets and famous star patterns, and draw your own night sky. Big, bold black print with no red ink makes every page easy to read under a red flashlight.",
+      "pageCount": 86,
+      "journal": {
+        "title": "My Stargazing Journal",
+        "subtitle": "A Night Sky Log for Kids: Track the Moon, Find Planets and Constellations, and Draw What You See",
+        "bullets": [
+          "30 nights to log, each with a checklist page and a full Sky View page to draw your sky",
+          "A Moon shapes guide and 3 monthly Moon trackers",
+          "A planet hunt, 20 constellation maps by season and a meteor shower calendar",
+          "Tip pages: make a red flashlight, measure the sky with your hand, find the North Star",
+          "4 space pictures to color and a Star Spotter certificate",
+          "Ages 8 and up, 86 pages, 8.5 x 11 in"
+        ],
+        "amazonUrl": "https://www.amazon.com/dp/B0HS6NT4VH",
+        "samples": [
+          {
+            "src": "/samples/my-stargazing-journal/journal-cover.jpg",
+            "caption": "Front cover"
+          },
+          {
+            "src": "/samples/my-stargazing-journal/journal-moon-shapes.jpg",
+            "caption": "Moon Shapes"
+          },
+          {
+            "src": "/samples/my-stargazing-journal/journal-planet-hunt.jpg",
+            "caption": "Planet Hunt"
+          },
+          {
+            "src": "/samples/my-stargazing-journal/journal-star-patterns.jpg",
+            "caption": "Star Patterns: Winter and Spring"
+          },
+          {
+            "src": "/samples/my-stargazing-journal/journal-night-log.jpg",
+            "caption": "Night log page"
+          },
+          {
+            "src": "/samples/my-stargazing-journal/journal-color-moon.jpg",
+            "caption": "20 Nights! Color the Moon"
+          },
+          {
+            "src": "/samples/my-stargazing-journal/journal-certificate.jpg",
+            "caption": "Star Spotter certificate"
+          }
+        ]
+      },
+      "overviewVideo": "",
+      "cover": "/samples/my-stargazing-journal/journal-cover.jpg"
     }
   ]
 }
